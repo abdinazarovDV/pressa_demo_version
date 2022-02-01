@@ -26,10 +26,7 @@ app.use('/categories', categoryRouter);
 app.use('/admin', adminRouter);
 
 app.use((err, req, res, next) => {
-    console.log(err);
-    res.json({
-        message: err.message
-    })
+    ([400, 401, 402, 403, 404]).includes(err.status) ? res.status(err.status).send(err) : res.status(500).send({status:500, message: "Internal Server Error"}); 
 })
 
 app.listen(PORT, () => console.log("running http://localhost:" + PORT));
