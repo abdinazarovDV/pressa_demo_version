@@ -96,7 +96,7 @@ export const postsController = {
             if(mainCategory){
                 newBase = newBase.filter(el=>el.mainCategory.toLowerCase()==req.query.mainCategory.toLocaleLowerCase());
             }
-            if(JSON.parse(subCategory)){
+            if(subCategory && JSON.parse(subCategory)){
                 subCategory = JSON.parse(subCategory);
                 console.log(subCategory.includes("web-dasturlash"));
                 newBase = newBase.filter(el=>subCategory.includes(el.subCategory));

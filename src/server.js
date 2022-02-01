@@ -3,7 +3,7 @@ import fileUpload from 'express-fileupload';
 import cors from 'cors';
 import path from 'path';
 import { configs } from "#config"
-const PORT = configs.PORT || process.env.PORT
+const PORT = process.env.PORT || configs.PORT
 const app = express();
 
 app.use( express.json() );
