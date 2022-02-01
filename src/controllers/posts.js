@@ -1,5 +1,7 @@
 import path from 'path';
 import order from 'orderby-time';
+import { ERRORS } from "#lib/error";
+const { ClientError } = ERRORS;
 export const postsController = {
 
     POST: function (req, res, next) {
@@ -149,7 +151,7 @@ export const postsController = {
             let data = req.jsonReadFile("posts");
             data = data.filter( post => post.postId == postId);
             console.log(data);
-            if(data.length == 0) throw new Error("No like this id");
+            if(data.length == 0) throw new ClientError("No like this id");
             
             return res.status(200).json(data);
         } catch(err) {
