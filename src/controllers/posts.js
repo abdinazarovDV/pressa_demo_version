@@ -141,5 +141,19 @@ export const postsController = {
         } catch(err) {
             return next(err);
         }
+    },
+
+    GETWITHID: function(req, res, next) {
+        try {
+            let { postId } = req.params;
+            let data = req.jsonReadFile("posts");
+            data = data.filter( post => post.postId == postId);
+            console.log(data);
+            if(data.length == 0) throw new Error("No like this id");
+            
+            return res.status(200).json(data);
+        } catch(err) {
+            return next(err);
+        }
     }
 }

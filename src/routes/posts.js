@@ -9,5 +9,7 @@ router.route('/')
     .get(postsController.GET)
     .post(validation, postsController.POST)
     .put(postsController.PUT)
+router.route('/:postId')
+    .get(postsController.GETWITHID)
 
 export default router;
