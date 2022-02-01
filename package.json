@@ -1,0 +1,29 @@
+{
+  "name": "backend_server",
+  "type": "module",
+  "imports": {
+    "#config": "./config/config.js",
+    "#routes/*": "./src/routes/*.js",
+    "#cont/*": "./src/controllers/*.js",
+    "#lib/*": "./src/library/*.js"
+  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "express-fileupload": "^1.2.1",
+    "orderby-time": "^0.1.0"
+  }
+}

@@ -1,0 +1,112 @@
+[
+    {
+        "postId": 1,
+        "date": "27-12-2022",
+        "time": "20:00",
+        "fullTime": "2022-12-27T20:00:00",
+        "mainCategory": "dasturlash",
+        "subCategory": "web-dasturlash",
+        "type": 1,
+        "link": "sadasdasdadasdasdasd",
+        "organizer": 1,
+        "speaker": "Botir Ziyatov",
+        "proffesion": "Dasturchi",
+        "phone": [
+            "998990026162",
+            "998990015152"
+        ],
+        "title": "Python dasturlash tili haqiqatdan ham osonmi?",
+        "description": "Python dasturlashni endi boshlamoqchi bo'lganlar uchun bo'ladi",
+        "image": "/getting/img/195874236python.png",
+        "text": "Nega hamma python dasturlash tilini oson deb biladi? Haqiqatdan ham u osonmi? Python dasturlash tili sintaksis jihatdan yengil til hisoblanadi",
+        "check": true,
+        "refused": {
+            "time": "2022-02-03T19:00:00",
+            "agree": true
+        },
+        "views": 14
+    },
+    {
+        "postId": 2,
+        "date": "03-02-2022",
+        "time": "19:00",
+        "fullTime": "2022-02-03T19:00:00",
+        "mainCategory": "dasturlash",
+        "subCategory": "mobile",
+        "type": 1,
+        "link": "sadasdasdadasdasdasd",
+        "organizer": 1,
+        "speaker": "Botir Ziyatov",
+        "proffesion": "Dasturchi",
+        "phone": [
+            "998990026162",
+            "998990015152"
+        ],
+        "title": "Python dasturlash tili haqiqatdan ham osonmi?",
+        "description": "Python dasturlashni endi boshlamoqchi bo'lganlar uchun bo'ladi",
+        "image": "/getting/img/195874236python.png",
+        "text": "Nega hamma python dasturlash tilini oson deb biladi? Haqiqatdan ham u osonmi? Python dasturlash tili sintaksis jihatdan yengil til hisoblanadi",
+        "check": true,
+        "refused": {
+            "time": "2022-02-03T19:00:00",
+            "agree": true
+        },
+        "views": 10
+    },
+    {
+        "postId": 3,
+        "date": "2022-12-23",
+        "time": "18:00",
+        "fullTime": "2022-12-23T18:00:00",
+        "mainCategory": "dasturlash",
+        "subCategory": "web-dasturlash",
+        "type": "1",
+        "link": "zoom link yoki google maps",
+        "organizer": "2",
+        "legalName": "Oson MCHJ",
+        "speaker": "Saidbek Arslonov",
+        "proffesion": "Dasturchi",
+        "phone": [
+            "998990026162",
+            "998330026162"
+        ],
+        "title": "Frontend dasturchi bo'lish xaritasi.",
+        "description": "poqweiru;laskdfj.z,xmcvnp[qwoeria;slkdfj,.zxmcnv",
+        "image": "/getting/img/467935103pexels-imad-clicks-10656139.jpg",
+        "text": "pqoweriaslpqoweriaslpqoweriaslpqoweriaslpqoweriaslpqoweriaslpqoweriaslpqoweriaslpqoweriaslpqoweriaslpqoweriasl;dfk,zmnxcbal;skdfjoqpwierukjasdhf,zmxncvboqpwieruaklsjdfhkasjhfklasjdhflksajfhskaldjfh",
+        "check": true,
+        "refused": {
+            "time": "2022-02-03T19:00:00",
+            "agree": false
+        },
+        "views": 1
+    },
+    {
+        "postId": 4,
+        "date": "2022-02-03",
+        "time": "18:00",
+        "fullTime": "2022-02-03T18:00:00",
+        "mainCategory": "biznes",
+        "subCategory": "boshqaruv",
+        "type": "1",
+        "link": "lkasjhdfklasjhfaklsjfhksaj",
+        "organizer": "2",
+        "speaker": "Rustam Abdinazarov",
+        "proffesion": "dasturchi",
+        "phone": [
+            "998990026162",
+            "998330026162"
+        ],
+        "title": "nodeJS rivojlanish va juniorlarga ish topish",
+        "description": "iufaslkweoislkfdwsmnzxcbvweuysdflkjhsdfkjsdfjkshdgfksjhdfgsdgflaksjd,zmxc nmxvbclskdfeiurtyslkdfhj",
+        "image": "/getting/img/699137151gettyimages-1217175793-170667a.jpg",
+        "text": "lkasjdhfklsajdhf,asdfsadfsafasffdasdfadddddddddddddddddddddddddddddddddddddddddddddddddddjhggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg weyuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuxcbnzvzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "check": true,
+        "views": 2,
+        "legalName": "Oson mchj",
+        "refused": {
+            "time": "2022-02-03T19:00:00",
+            "agree": true
+        }
+    }
+]
