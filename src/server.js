@@ -23,7 +23,7 @@ import adminRouter from '#routes/admin';
 
 app.use('/posts', postRouter);
 app.use('/categories', categoryRouter);
-app.use('/adminchecked', adminRouter);
+app.use('/admin', adminRouter);
 
 app.use((err, req, res, next) => {
     console.log(err);

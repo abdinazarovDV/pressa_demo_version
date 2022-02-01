@@ -1,3 +1,5 @@
+// import order from 'orderby-time';
+
 export const adminController = {
     
     GET: function(req, res, next) {
@@ -41,6 +43,25 @@ export const adminController = {
             return res.json({
                 status: 200,
                 message: "the user succsecfully updated"
+            })
+        } catch (err) {
+            return next(err);
+        }
+    },
+
+    DELDONE: function (req, res, next) {
+        try {
+            let data = req.jsonReadFile("posts");
+            let dataCopy = req.jsonReadFile("posts");
+            data = data.filter(el=>Date.parse(el.fullTime)>=Date.now());
+            let arrIdFuture = data.map( el => el.postId);
+            let index = dataCopy.findIndex( el => !arrIdFuture.includes(el.postId));
+            req.jsonWriteFile("removed", dataCopy[index]);
+            dataCopy.splice(index, 1);
+            req.jsonWriteFile("posts", dataCopy);
+            return res.status(200).json({
+                status: 200,
+                message: "removed"
             })
         } catch (err) {
             return next(err);
