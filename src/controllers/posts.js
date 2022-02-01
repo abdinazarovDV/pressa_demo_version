@@ -150,7 +150,6 @@ export const postsController = {
             let { postId } = req.params;
             let data = req.jsonReadFile("posts");
             data = data.filter( post => post.postId == postId);
-            console.log(data);
             if(data.length == 0) throw new ClientError(400, "No like this id");
             
             return res.status(200).json(data);
