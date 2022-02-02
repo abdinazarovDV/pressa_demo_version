@@ -80,38 +80,27 @@ export const postsController = {
                 speaker = "",
 
             } = req.query;
-
-            let newBase = text.filter(el=>Date.parse(el.fullTime)>=Date.now());
             
-            if(date){
-                newBase = newBase.filter(el=>el.date==req.query.date);
-            }
+            let newBase = text.filter(el=>Date.parse(el.fullTime)>=Date.now());
+            if(date) newBase = newBase.filter(el=>el.date==req.query.date);
 
-            if(type){
-                newBase = newBase.filter(el=>el.type==req.query.type);
-            }
+            if(type) newBase = newBase.filter(el=>el.type==req.query.type);
 
-            if(search){
-                newBase = newBase.filter(el=>el.title.toLowerCase().includes(req.query.search.toLocaleLowerCase()));
-            }
+            if(search) newBase = newBase.filter(el=>el.title.toLowerCase().includes(req.query.search.toLocaleLowerCase()));
 
-            if(mainCategory){
-                newBase = newBase.filter(el=>el.mainCategory.toLowerCase()==req.query.mainCategory.toLocaleLowerCase());
-            }
+            if(mainCategory) newBase = newBase.filter(el=>el.mainCategory.toLowerCase()==req.query.mainCategory.toLocaleLowerCase());
+
             if(subCategory && JSON.parse(subCategory)){
                 subCategory = JSON.parse(subCategory);
-                console.log(subCategory.includes("web-dasturlash"));
                 newBase = newBase.filter(el=>subCategory.includes(el.subCategory));
             }
-
-            if(speaker){
-                newBase = newBase.filter(el=>el.speaker.toLowerCase().includes(req.query.speaker.toLocaleLowerCase()));
-            }
+            if(speaker) newBase = newBase.filter(el=>el.speaker.toLowerCase().includes(req.query.speaker.toLocaleLowerCase()));
 
             const { 
                 page = 1, 
                 limit = 9 
             } = req.query;
+
             newBase = newBase.filter(el=> {
                 delete el.fullTime;
                 el.refusedTime = el.refused.time;
@@ -122,29 +111,11 @@ export const postsController = {
             newBase = newBase.slice(page*limit-limit,page*limit);
             
             res.json(newBase);
+
         } catch(err) {
             return next(err);
         }
         
-    },
-
-    PUT: function(req, res, next) {
-        try {
-            let { postId } = req.body;
-            let data = req.jsonReadFile("posts");
-            data.map( post => {
-                if(post.postId == postId){
-                    post.views += 1;
-                }
-            })
-            req.jsonWriteFile("posts", data);
-            res.status(200).json({
-                status: 200,
-                message: "views added!"
-            })
-        } catch(err) {
-            return next(err);
-        }
     },
 
     GETWITHID: function(req, res, next) {
