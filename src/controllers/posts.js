@@ -34,6 +34,7 @@ export const postsController = {
                 date,
                 time,
                 fullTime: date + 'T' + time + ":00",
+                cameTime: Date.now(),
                 mainCategory,
                 subCategory,
                 type,

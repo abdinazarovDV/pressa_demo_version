@@ -1,18 +1,27 @@
-// import order from 'orderby-time';
+import order from 'orderby-time';
 
 export const adminController = {
     
     GET: function(req, res, next) {
         try {
-            console.log("getcontroller");
+            let { sortby } = req.query;
             let data = req.jsonReadFile("posts");
-            data = data.filter( post => {
-                if(post.check == false){
-                    return true;
+            data = data.filter(post => {
+            if(
+                (Date.parse(post.fullTime) >= Date.now()) && 
+                (post.check == false)
+                ) {
+                    return post;
                 }
-            })
+            });
+            
+            if(sortby = 'willTime') {
+                data = order("fullTime", data);
+                return res.status(200).json(data);
 
-            return res.json(data);
+            }
+            data.sort((a ,b) => (a.cameTime > b.cameTime)? 1: -1);
+            return res.status(200).json(data);;
         } catch (err) {
             return next(err);
         }
@@ -49,20 +58,37 @@ export const adminController = {
         }
     },
 
-    DELDONE: function (req, res, next) {
+    GET_ACCEPTED: function (req, res, next) {
         try {
             let data = req.jsonReadFile("posts");
-            let dataCopy = req.jsonReadFile("posts");
-            data = data.filter(el=>Date.parse(el.fullTime)>=Date.now());
-            let arrIdFuture = data.map( el => el.postId);
-            let index = dataCopy.findIndex( el => !arrIdFuture.includes(el.postId));
-            req.jsonWriteFile("removed", dataCopy[index]);
-            dataCopy.splice(index, 1);
-            req.jsonWriteFile("posts", dataCopy);
-            return res.status(200).json({
-                status: 200,
-                message: "removed"
-            })
+            data = order("refused.time", data);
+            data = data.filter(post => {
+                if(
+                    (Date.parse(post.refused.time) >= Date.now()) && 
+                    (post.refused.agree == true)
+                ) {
+                    return post;
+                }
+            });
+            return res.status(200).json(data);
+        } catch (err) {
+            return next(err);
+        }
+    },
+
+    GET_REJECTED: function (req, res, next) {
+        try {
+            let data = req.jsonReadFile("posts");
+            data = order("refused.time", data);
+            data = data.filter(post => {
+                if(
+                    (Date.parse(post.refused.time) >= Date.now()) && 
+                    (post.refused.agree == false)
+                ) {
+                    return post;
+                }
+            });
+            return res.status(200).json(data);
         } catch (err) {
             return next(err);
         }

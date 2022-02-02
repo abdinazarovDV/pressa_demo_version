@@ -1,9 +1,10 @@
 [
     {
         "postId": 1,
-        "date": "2022-12-27",
-        "time": "20:00",
-        "fullTime": "2022-12-27T20:00:00",
+        "date": "2022-02-03",
+        "time": "08:00",
+        "fullTime": "2022-02-03T08:00:00",
+        "cameTime": 1643821530565,
         "mainCategory": "dasturlash",
         "subCategory": "web-dasturlash",
         "type": 1,
@@ -19,10 +20,10 @@
         "description": "Python dasturlashni endi boshlamoqchi bo'lganlar uchun bo'ladi",
         "image": "/getting/img/195874236python.png",
         "text": "Nega hamma python dasturlash tilini oson deb biladi? Haqiqatdan ham u osonmi? Python dasturlash tili sintaksis jihatdan yengil til hisoblanadi",
-        "check": true,
+        "check": false,
         "refused": {
             "time": "2022-02-03T19:00:00",
-            "agree": true
+            "agree": false
         },
         "views": 19
     },
@@ -31,6 +32,7 @@
         "date": "2022-02-03",
         "time": "19:00",
         "fullTime": "2022-02-03T19:00:00",
+        "cameTime": 1643821530255,
         "mainCategory": "dasturlash",
         "subCategory": "mobile",
         "type": 1,
@@ -46,9 +48,9 @@
         "description": "Python dasturlashni endi boshlamoqchi bo'lganlar uchun bo'ladi",
         "image": "/getting/img/195874236python.png",
         "text": "Nega hamma python dasturlash tilini oson deb biladi? Haqiqatdan ham u osonmi? Python dasturlash tili sintaksis jihatdan yengil til hisoblanadi",
-        "check": true,
+        "check": false,
         "refused": {
-            "time": "2022-02-03T19:00:00",
+            "time": "2022-02-03T18:00:00",
             "agree": true
         },
         "views": 15
@@ -58,6 +60,7 @@
         "date": "2022-12-23",
         "time": "18:00",
         "fullTime": "2022-12-23T18:00:00",
+        "cameTime": 1643001000565,
         "mainCategory": "dasturlash",
         "subCategory": "web-dasturlash",
         "type": "1",
@@ -86,6 +89,7 @@
         "date": "2022-02-03",
         "time": "18:00",
         "fullTime": "2022-02-03T18:00:00",
+        "cameTime": 1643821124565,
         "mainCategory": "biznes",
         "subCategory": "boshqaruv",
         "type": "2",
@@ -105,15 +109,16 @@
         "views": 7,
         "legalName": "Oson mchj",
         "refused": {
-            "time": "2022-02-01T18:11:00",
+            "time": "2022-02-03T14:11:00",
             "agree": true
         }        
     },
     {
-        "postId": 3,
+        "postId": 12,
         "date": "2022-12-23",
         "time": "18:00",
         "fullTime": "2022-12-23T18:00:00",
+        "cameTime": 1643821954565,
         "mainCategory": "dasturlash",
         "subCategory": "web-dasturlash",
         "type": "1",
@@ -142,6 +147,7 @@
         "date": "2022-12-23",
         "time": "18:00",
         "fullTime": "2022-12-23T18:00:00",
+        "cameTime": 1643821000872,
         "mainCategory": "dasturlash",
         "subCategory": "web-dasturlash",
         "type": "1",
@@ -170,6 +176,7 @@
         "date": "2022-12-23",
         "time": "18:00",
         "fullTime": "2022-12-23T18:00:00",
+        "cameTime": 1643821430565,
         "mainCategory": "dasturlash",
         "subCategory": "web-dasturlash",
         "type": "1",
@@ -198,6 +205,7 @@
         "date": "2022-12-23",
         "time": "18:00",
         "fullTime": "2022-12-23T18:00:00",
+        "cameTime": 1643821823565,
         "mainCategory": "dasturlash",
         "subCategory": "web-dasturlash",
         "type": "1",
@@ -226,6 +234,7 @@
         "date": "2022-12-23",
         "time": "18:00",
         "fullTime": "2022-12-23T18:00:00",
+        "cameTime": 1643829900565,
         "mainCategory": "dasturlash",
         "subCategory": "web-dasturlash",
         "type": "1",
@@ -254,6 +263,7 @@
         "date": "2022-12-23",
         "time": "18:00",
         "fullTime": "2022-12-23T18:00:00",
+        "cameTime": 1643821007665,
         "mainCategory": "dasturlash",
         "subCategory": "web-dasturlash",
         "type": "1",
@@ -282,6 +292,7 @@
         "date": "2022-12-23",
         "time": "23:00",
         "fullTime": "2022-12-23T18:00:00",
+        "cameTime": 1643821000565,
         "mainCategory": "dasturlash",
         "subCategory": "web-dasturlash",
         "type": "1",
