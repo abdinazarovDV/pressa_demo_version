@@ -151,14 +151,19 @@ export const postsController = {
         try {
             let { postId } = req.params;
             let data = req.jsonReadFile("posts");
+            let dataCopy = req.jsonReadFile("posts");
             data = data.filter( post => post.postId == postId);
             if(data.length == 0) throw new ClientError(400, "No like this id");
             
             data.map( post => {
                 delete post.fullTime;
-                post.refusedTime = post.refused.time;
+                post.refusedDate = post.refused.time.split("T")[0];
+                post.refusedTime = post.refused.time.split("T")[1].slice(0,5);
                 delete post.refused;
             })
+
+            dataCopy.map( post => post.views += 1);
+            req.jsonWriteFile("posts", dataCopy);
             
             return res.status(200).json(data);
         } catch(err) {
