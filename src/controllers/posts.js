@@ -113,7 +113,9 @@ export const postsController = {
                 limit = 9 
             } = req.query;
             newBase = newBase.filter(el=> {
-                delete el.fullTime
+                delete el.fullTime;
+                el.refusedTime = el.refused.time;
+                delete el.refused
                 return el
             })
 
