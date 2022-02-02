@@ -9,6 +9,8 @@ router.route('/')
     .get(postsController.GET)
     .post(validation, postsController.POST)
     .put(postsController.PUT)
+router.route('/speakers')
+    .get(postsController.GETSPEAKERS)
 router.route('/:postId')
     .get(postsController.GETWITHID)
 

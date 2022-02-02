@@ -156,5 +156,17 @@ export const postsController = {
         } catch(err) {
             return next(err);
         }
+    },
+
+    GETSPEAKERS: function(req, res, next) {
+        try{
+            let data = req.jsonReadFile("posts");
+            data = data.map( post => post.speaker);
+            data = new Set(data);
+            data = Array.from(data);
+            return res.status(200).json(data);
+        } catch (err) {
+            return next(err);
+        }
     }
 }
