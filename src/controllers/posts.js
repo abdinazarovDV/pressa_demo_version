@@ -115,7 +115,7 @@ export const postsController = {
             newBase = newBase.filter(el=> {
                 delete el.fullTime;
                 el.refusedTime = el.refused.time;
-                delete el.refused
+                delete el.refused;
                 return el
             })
 
@@ -153,6 +153,12 @@ export const postsController = {
             let data = req.jsonReadFile("posts");
             data = data.filter( post => post.postId == postId);
             if(data.length == 0) throw new ClientError(400, "No like this id");
+            
+            data.map( post => {
+                delete post.fullTime;
+                post.refusedTime = post.refused.time;
+                delete post.refused;
+            })
             
             return res.status(200).json(data);
         } catch(err) {
