@@ -3,7 +3,7 @@ import { Router } from "express";
 const router = Router();
 
 import { postsController } from "#cont/posts";
-import validation from "#lib/validation";
+import validation from "#mid/validation";
 
 router.route('/')
     .get(postsController.GET)

@@ -11,19 +11,22 @@ app.use( fileUpload() );
 app.use( express.json() );
 app.use( cors() );
 
-import { jsonHelper } from "#lib/jsonhelp";
+import { jsonHelper } from "#mid/jsonhelp";
+import verify from '#mid/verify';
 
 app.use(jsonHelper);
 
 app.use('/getting', express.static(path.join(process.cwd(), 'media')));
 
+import authorizationRouter from '#routes/authorization';
 import postRouter from '#routes/posts';
 import categoryRouter from '#routes/category';
 import adminRouter from '#routes/admin';
 
+app.use('/authorization', authorizationRouter);
 app.use('/posts', postRouter);
 app.use('/categories', categoryRouter);
-app.use('/admin', adminRouter);
+app.use('/admin',verify , adminRouter);
 
 app.use((err, req, res, next) => {
     console.log(err);

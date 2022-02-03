@@ -5,7 +5,8 @@
     "#config": "./config/config.js",
     "#routes/*": "./src/routes/*.js",
     "#cont/*": "./src/controllers/*.js",
-    "#lib/*": "./src/library/*.js"
+    "#lib/*": "./src/library/*.js",
+    "#mid/*": "./src/middlewares/*.js"
   },
   "version": "1.0.0",
   "description": "",
@@ -24,6 +25,8 @@
     "cors": "^2.8.5",
     "express": "^4.17.2",
     "express-fileupload": "^1.2.1",
-    "orderby-time": "^0.1.0"
+    "jsonwebtoken": "^8.5.1",
+    "orderby-time": "^0.1.0",
+    "sha256": "^0.2.0"
   }
 }

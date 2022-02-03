@@ -1,4 +1,6 @@
 import order from 'orderby-time';
+import { ERRORS } from "#lib/error"
+const { ClientError } = ERRORS;
 
 export const adminController = {
     
@@ -30,6 +32,8 @@ export const adminController = {
     PUT: function(req, res, next) {
         try {
             let { postId, agree } = req.body;
+            console.log(false, agree);
+            if(!postId || !([true, false].includes(agree))) throw new ClientError(400, "No postId or agree");
             let data = req.jsonReadFile("posts");
             let date = new Date;
             let time = date.getFullYear() + "-" +
@@ -47,7 +51,7 @@ export const adminController = {
                     }
                 }
             })
-
+            console.log(data);
             req.jsonWriteFile("posts", data);
             return res.json({
                 status: 200,
