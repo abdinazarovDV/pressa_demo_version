@@ -76,7 +76,7 @@
         "description": "Trening orqali hayot tarzida, biznesda, ish faoliyatingizda siz uchun zarur bo‘lgan ma'lumotlarga ega bo‘ling.",
         "image": "/getting/img/923845620photo_2021-11-27_20-16-37.jpg",
         "text": "Spikerlar: 24 yillik tajribaga ega, YSK O‘zbek kiyim-kechak brendi, YASKANAMU Tekstil Fabrikasi kabi loyihalar asoschisi Sherzod Beknazarov. Assodiq loyihasi asoschisi Abdulmannon Abdulloh. Xalqaro toifadagi iqtisodchi, Yukalish, Biznes kvadrat, Patronlar Ligasi kabi loyihalar asoschisi Muhammadali Eshonqulov",
-        "check": false,
+        "check": true,
         "refused": {
             "time": "2022-02-10T14:00:00",
             "agree": true
