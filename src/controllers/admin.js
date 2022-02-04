@@ -9,20 +9,20 @@ export const adminController = {
             let { sortby } = req.query;
             let data = req.jsonReadFile("posts");
             data = data.filter(post => {
-            if(
-                (Date.parse(post.fullTime) >= Date.now()) && 
-                (post.check == false)
-                ) {
-                    return post;
-                }
+                if(
+                    (Date.parse(post.fullTime) >= Date.now()) && 
+                    (post.check == false)
+                    ) {
+                        return post;
+                    }
             });
-            
-            if(sortby = 'willTime') {
+            if(sortby == 'willTime') {
+                console.log("will");
                 data = order("fullTime", data);
                 return res.status(200).json(data);
 
             }
-            data.sort((a ,b) => (a.cameTime > b.cameTime)? 1: -1);
+            data = order("cameTime", data);
             return res.status(200).json(data);;
         } catch (err) {
             return next(err);

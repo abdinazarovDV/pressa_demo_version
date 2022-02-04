@@ -4,7 +4,7 @@
         "date": "2022-04-03",
         "time": "13:00",
         "fullTime": "2022-04-03T13:00:00",
-        "cameTime": 1643821530565,
+        "cameTime": "2022-02-17T13:51:36",
         "mainCategory": "marketing",
         "subCategory": "umumiy marketing",
         "type": 1,
@@ -25,14 +25,14 @@
             "time": "2022-02-20T13:00:00",
             "agree": false
         },
-        "views": 34
+        "views": 41
     },
     {
         "postId": 2,
         "date": "2022-05-20",
         "time": "12:00",
         "fullTime": "2022-05-20T12:00:00",
-        "cameTime": 1643821530565,
+        "cameTime": "2022-02-18T13:51:36",
         "mainCategory": "marketing",
         "subCategory": "umumiy marketing",
         "type": 2,
@@ -53,14 +53,14 @@
             "time": "2022-04-13T13:47:00",
             "agree": true
         },
-        "views": 44
+        "views": 51
     },
     {
         "postId": 3,
         "date": "2022-03-27",
         "time": "10:00",
         "fullTime": "2022-03-27T10:00:00",
-        "cameTime": 1643821530565,
+        "cameTime": "2022-02-05T08:51:36",
         "mainCategory": "biznes",
         "subCategory": "biznesni tizimlashtirish",
         "type": 1,
@@ -76,19 +76,19 @@
         "description": "Trening orqali hayot tarzida, biznesda, ish faoliyatingizda siz uchun zarur bo‘lgan ma'lumotlarga ega bo‘ling.",
         "image": "/getting/img/923845620photo_2021-11-27_20-16-37.jpg",
         "text": "Spikerlar: 24 yillik tajribaga ega, YSK O‘zbek kiyim-kechak brendi, YASKANAMU Tekstil Fabrikasi kabi loyihalar asoschisi Sherzod Beknazarov. Assodiq loyihasi asoschisi Abdulmannon Abdulloh. Xalqaro toifadagi iqtisodchi, Yukalish, Biznes kvadrat, Patronlar Ligasi kabi loyihalar asoschisi Muhammadali Eshonqulov",
-        "check": true,
+        "check": false,
         "refused": {
             "time": "2022-02-10T14:00:00",
             "agree": true
         },
-        "views": 91
+        "views": 98
     },
     {
         "postId": 4,
         "date": "2022-09-18",
         "time": "09:00",
         "fullTime": "2022-09-18T09:00:00",
-        "cameTime": 1643821530565,
+        "cameTime": "2022-02-05T19:51:36",
         "mainCategory": "biznes",
         "subCategory": "biznesni boshlash",
         "type": 1,
@@ -104,19 +104,19 @@
         "description": "Trening orqali biznesda va ish faoliyatingizda siz uchun zarur bo‘lgan ma'lumotlarga ega bo‘ling.",
         "image": "/getting/img/928374563photo_2022-02-02_08-21-53.jpg",
         "text": "Adashib qolmaslik va to'g'ri yo'lni tanlash uchun - o'z biznesingizni ongli ravishda quring",
-        "check": true,
+        "check": false,
         "refused": {
-            "time": "2022-02-03T19:09:00",
+            "time": "2022-02-04T11:49:00",
             "agree": true
         },
-        "views": 87
+        "views": 94
     },
     {
         "postId": 5,
-        "date": "2022-02-04",
+        "date": "2022-02-06",
         "time": "20:00",
-        "fullTime": "2022-04-27T15:00:00",
-        "cameTime": 1643821530565,
+        "fullTime": "2022-02-06T15:00:00",
+        "cameTime": "2022-02-05T18:51:36",
         "mainCategory": "biznes",
         "subCategory": "biznesni boshlash",
         "type": 2,
@@ -137,14 +137,14 @@
             "time": "2022-01-09T22:32:00",
             "agree": false
         },
-        "views": 121
+        "views": 128
     },
     {
         "postId": 6,
         "date": "2022-05-13",
         "time": "10:00",
         "fullTime": "2022-05-13T10:00:00",
-        "cameTime": 1643821530565,
+        "cameTime": "2022-02-08T18:51:36",
         "mainCategory": "dasturlash",
         "subCategory": "boshqalar",
         "type": 1,
@@ -165,6 +165,6 @@
             "time": "2022-04-18T22:32:00",
             "agree": true
         },
-        "views": 121
+        "views": 128
     }
 ]
