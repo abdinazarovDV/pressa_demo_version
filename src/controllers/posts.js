@@ -69,9 +69,9 @@ export const postsController = {
 
     GET: function(req, res, next) {
         try {
-            let text = req.jsonReadFile('posts');
-            text = text.filter( el => el.check == true && el.refused.agree == true);
-            text = order('fullTime',text);
+            let data = req.jsonReadFile('posts');
+            data = data.filter( el => el.check == true && el.refused.agree == true);
+            data = order('fullTime',data);
             let {
                 date = "",
                 type = "",
@@ -81,8 +81,8 @@ export const postsController = {
                 speaker = "",
 
             } = req.query;
-            
-            let newBase = text.filter(el=>Date.parse(el.fullTime)>=Date.now());
+            console.log(data);
+            let newBase = data.filter(el=>Date.parse(el.fullTime)>=Date.now());
             if(date) newBase = newBase.filter(el=>el.date==req.query.date);
 
             if(type) newBase = newBase.filter(el=>el.type==req.query.type);

@@ -23,7 +23,7 @@
         "check": true,
         "refused": {
             "time": "2022-02-20T13:00:00",
-            "agree": false
+            "agree": true
         },
         "views": 41
     },
@@ -135,7 +135,7 @@
         "check": true,
         "refused": {
             "time": "2022-01-09T22:32:00",
-            "agree": false
+            "agree": true
         },
         "views": 128
     },
