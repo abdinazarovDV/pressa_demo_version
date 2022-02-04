@@ -89,11 +89,11 @@ export const postsController = {
 
             if(search) newBase = newBase.filter(el=>el.title.toLowerCase().includes(req.query.search.toLocaleLowerCase()));
 
-            if(mainCategory) newBase = newBase.filter(el=>el.mainCategory.toLowerCase()==req.query.mainCategory.toLocaleLowerCase());
+            if(mainCategory) newBase = newBase.filter(el=>el.mainCategory.toLowerCase()==req.query.mainCategory.toLowerCase());
 
             if(subCategory && JSON.parse(subCategory)){
-                subCategory = JSON.parse(subCategory);
-                newBase = newBase.filter(el=>subCategory.includes(el.subCategory));
+                subCategory = JSON.parse(subCategory).map( el => el.toLowerCase());
+                newBase = newBase.filter(el=>subCategory.includes(el.subCategory.toLowerCase()));
             }
             if(speaker) newBase = newBase.filter(el=>el.speaker.toLowerCase().includes(req.query.speaker.toLocaleLowerCase()));
 

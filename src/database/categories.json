@@ -1,37 +1,33 @@
 [
     {
-        "dasturlash": [
-            "web-dasturlash",
-            "mobile-dasturlash",
-            "sun'iy intellekt",
-            "boshqalar"
+        "Dasturlash": [
+            "Web-dasturlash",
+            "Mobile-dasturlash",
+            "Sun'iy intellekt"
         ]
     },
     {
-        "marketing": [
-            "smm",
-            "umumiy marketing",
-            "boshqalar"
+        "Darketing": [
+            "SMM",
+            "Umumiy marketing"
         ]
     },
     {
-        "shaxsiy rivojlanish": [""]
+        "Shaxsiy rivojlanish": [""]
     },
     {
-        "biznes": [
-            "biznesni tizimlashtirish",
-            "biznesni boshlash",
-            "boshqaruv",
-            "investitsiyalar",
-            "boshqalar"
+        "Biznes": [
+            "Biznesni tizimlashtirish",
+            "Biznesni boshlash",
+            "Boshqaruv",
+            "Investitsiyalar"
         ]
     },
     {
-        "dizayn": [
-            "ui-ux dizayn",
-            "grafik dizayn",
-            "moushin grafika",
-            "boshqalar"
+        "Dizayn": [
+            "Ui-ux dizayn",
+            "Grafik dizayn",
+            "Moushin grafika"
         ]
     }
 ]
