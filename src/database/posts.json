@@ -278,5 +278,62 @@
             "agree": false
         },
         "views": 0
+    },
+    {
+        "postId": 11,
+        "date": "2022-03-02",
+        "time": "10:00",
+        "fullTime": "2022-03-02T10:00:00",
+        "cameTime": "2022-02-15T18:51:36",
+        "mainCategory": "Biznes",
+        "subCategory": "Biznesni tizimlashtirish",
+        "type": 2,
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSeiCJDrvQY1MwsGtR_IoMm0jiGHpfjKbS1V6xg4-Gun-refRQ/viewform",
+        "organizer": 2,
+        "legalName": "MFaktor MCHJ",
+        "speaker": "Avazbek Tulovov",
+        "proffesion": "IT",
+        "phone": [
+            "998904356543",
+            "998993473787"
+        ],
+        "title": "O'quv markaz ochish osonmi?",
+        "description": "2-mart (ertaga) kuni, soat 10:00 da MFaktor telegram kanalida ovozli suhbat boʻlib oʻtadi.",
+        "image": "/getting/img/879263423mfaktor.jpg",
+        "text": "Nega o'quv markazlari ko'p. O'quv markazlarini ochish oson bo'lgani uchunmikan. Ho'p shunchalik oson bo'lsa unda nega ularning umri uzoqqa bormaydi. Shu savollarga javob olishni istasangiz ovozli chatimizda qatnashing!",
+        "check": true,
+        "refused": {
+            "time": "2022-02-19T22:32:00",
+            "agree": true
+        },
+        "views": 13
+    },
+    {
+        "postId": 12,
+        "date": "2022-02-20",
+        "time": "18:30",
+        "fullTime": "2022-02-20T18:30:00",
+        "cameTime": "2022-02-15T18:51:36",
+        "mainCategory": "Shaxsiy rivojlanish",
+        "subCategory": "",
+        "type": 1,
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSeiCJDrvQY1MwsGtR_IoMm0jiGHpfjKbS1V6xg4-Gun-refRQ/viewform",
+        "organizer": 2,
+        "speaker": "muhammadli Eshonqulov",
+        "proffesion": "Tadbirkor",
+        "phone": [
+            "998904356543",
+            "998993473787"
+        ],
+        "title": "100 yillik strategiya!",
+        "description": "20-fevral kuni ya’ni soat 18:30 da Big Data Biznes akademiyasida kelajagingiz va o’zingiz uchun muhim bo’lgan mavzuda katta tadbir bo’lib o’tadi.",
+        "image": "/getting/img/928734653mesh.jpg",
+        "text": "Nega o'quv markazlari ko'p. O'quv markazlarini ochish oson bo'lgani uchunmikan. Ho'p shunchalik oson bo'lsa unda nega ularning umri uzoqqa bormaydi. Shu savollarga javob olishni istasangiz ovozli chatimizda qatnashing!",
+        "check": true,
+        "refused": {
+            "time": "2022-02-19T22:32:00",
+            "agree": true
+        },
+        "views": 99
     }
 ]
