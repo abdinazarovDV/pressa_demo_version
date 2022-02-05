@@ -9,9 +9,7 @@ const app = express();
 app.use( express.json() );
 app.use( fileUpload() );
 app.use( express.json() );
-app.use( cors({
-    "origin": "https://pressa-n2.netlify.app"
-}) );
+app.use( cors() );
 
 import { jsonHelper } from "#mid/jsonhelp";
 import verify from '#mid/verify';
